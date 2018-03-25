@@ -1,0 +1,16 @@
+.keyword-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 300;
+    font-family: $primary-font;
+}
+
+.project-role {
+    text-transform: uppercase;
+    font-family: $primary-color;
+    font-weight: $light-weight;
+    font-size: 12px;
+    margin: 0;
+}

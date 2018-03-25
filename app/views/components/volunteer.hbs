@@ -1,12 +1,12 @@
 {{#if resume.volunteer.length}}
 <div class="container volunteer-container">
-    {{> title value="Volunteer"}}
+    {{> title value="Volunteer" level=2}}
 
     {{#each resume.volunteer}}
-    <section class="item">
-        {{> section-header name=this.organization }}
+    <section class="job item">
+        {{> section-header name=this.organization headerLevel=3}}
         {{#if position}}
-        <h5>{{position}}</h5>
+            <span class="job__role">{{position}}</span>
         {{/if}}
 
         {{#if summary}}

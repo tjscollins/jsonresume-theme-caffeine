@@ -18,8 +18,18 @@ $link-color             : #2895F1;
 
 /*----- Fonts -----*/
 
-$primary-font               : 'Lato', Helvetica, Arial, sans-serif;
-$secondary-font             : 'Josefin Sans', Helvetica, Arial, sans-serif;
+$primary-font           : 'Lato', Helvetica, Arial, sans-serif;
+$secondary-font         : 'Josefin Sans', Helvetica, Arial, sans-serif;
+
+$bold-weight            : 700;
+$light-weight           : 300;
+
+$rem-size               : 14px;
+$font-unit              : 0.25rem;
+$title-size             : 10;
+$section-header-size    : 5;
+$item-title-size        : 4;
+$basic-text-size        : 3;
 
 /*----- Dimensions and sizes -----*/
 
@@ -34,7 +44,6 @@ $laptop-width           : 992px;
 $desktop-width          : 1200px;
 $retina-width           : 1920px;
 
-$font-unit              : 4px;
 $profile-pic-size       : 52px;
 $aside-width            : 160px;
 $aside-margin           : 20px;

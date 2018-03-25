@@ -1,0 +1,17 @@
+.job {
+
+}
+
+.job__company {
+    @include lato($light-weight);
+    @include font-size($item-title-size);
+    text-transform: uppercase;
+}
+
+.job__highlights {
+
+}
+
+.job__highlights__item {
+    margin-bottom: 5px;
+}

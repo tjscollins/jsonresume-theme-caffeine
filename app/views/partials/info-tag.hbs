@@ -1,15 +1,13 @@
-<div class="info-tag-container">
+<div class="contact-info__item">
     {{#if icon}}
-    <i class="fa {{icon}}"></i>
+        <i class="contact-info__icon fa {{icon}}"></i>
     {{/if}}
 
     {{#if url}}
-        <h6 class="info-text">
-            <a href="{{url}}" target="_blank">
-                {{removeProtocol text}} <i class="fa fa-external-link" aria-hidden="true"></i>
+            <a class="contact-info__text" href="{{url}}" target="_blank">
+                {{removeProtocol text}}
             </a>
-        </h6>
     {{else}}
-        <h6 class="info-text">{{{text}}}</h6>
+        <span class="contact-info__text">{{{text}}}</span>
     {{/if}}
 </div>

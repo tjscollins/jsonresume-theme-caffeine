@@ -1,0 +1,27 @@
+.skill {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.skill__title {
+    @include josefin(700);
+    @include font-size($item-title-size);
+    letter-spacing: 1px;
+}
+
+.skill__level {
+    @include josefin(300);
+    @include font-size($basic-text-size);
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.skill__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill__list__item {
+    margin-right: 5px;
+}

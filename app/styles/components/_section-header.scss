@@ -1,0 +1,14 @@
+.section-header {
+}
+
+.section-header__title {
+    @include lato($bold-weight);
+    @include font-size($section-header-size);
+
+}
+
+.section-header__date {
+    @include lato($light-weight);
+    @include font-size($item-title-size);
+    text-transform: uppercase;
+}

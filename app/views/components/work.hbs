@@ -1,25 +1,25 @@
 {{#if resume.work.length}}
 <div class="container work-container">
-    {{> title value="Experience"}}
+    {{> title value="Work Experience" level=2}}
 
     {{#each resume.work}}
-        <section class="item">
-            {{> section-header name=this.company }}
+        <section class="job item">
+            {{> section-header name=this.position headerLevel=3 website=null}}
 
             {{#if position}}
-            <h4>{{position}}</h4>
+                <a class="job__company" href={{website}}>{{company}}</a>
             {{/if}}
 
             {{#if summary}}
-            <p class="summary">{{summary}}</p>
+                <p class="summary">{{summary}}</p>
             {{/if}}
 
             {{#if highlights.length}}
-            <ul>
-                {{#each highlights}}
-                <li>{{.}}</li>
-                {{/each}}
-            </ul>
+                <ul class="job__highlights">
+                    {{#each highlights}}
+                    <li class="job__highlights__item">{{.}}</li>
+                    {{/each}}
+                </ul>
             {{/if}}
         </section>
     {{/each}}

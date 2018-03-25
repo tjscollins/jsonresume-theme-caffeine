@@ -1,0 +1,22 @@
+.contact-info {
+    max-width: 100%;
+}
+
+.contact-info__icon {
+    margin-right: 5px;
+    width: 15px;
+}
+
+.contact-info__item {
+    @include font-size($item-title-size);
+    @include lato($light-weight);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.25;
+    margin-bottom: 5px;
+}
+
+.contact-info__text {
+    max-width: 100%;
+}

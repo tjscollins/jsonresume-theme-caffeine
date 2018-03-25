@@ -1,0 +1,13 @@
+.languages {
+
+}
+
+.languages__list {
+    list-style: none;
+    padding: 0;
+}
+
+.languages__list__item {
+    padding: inherit;
+    @include font-size($basic-text-size);
+}

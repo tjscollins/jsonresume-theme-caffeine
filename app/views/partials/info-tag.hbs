@@ -4,7 +4,10 @@
     {{/if}}
 
     {{#if url}}
-            <a class="contact-info__text" href="{{url}}" target="_blank">
+            <a class="contact-info__text" href="{{url}}"
+                {{#if (notEmail url)}}
+                    target="_blank"
+                {{/if}}>
                 {{removeProtocol text}}
             </a>
     {{else}}

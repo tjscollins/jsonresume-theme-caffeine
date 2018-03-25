@@ -42,6 +42,14 @@ handlebars.registerHelper({
 
     formatDate: function(date) {
         return moment(date).format('MM/YYYY');
+    },
+
+    emailLink: function(email) {
+        return `mailto:${email}`;
+    },
+
+    notEmail: function(url) {
+        return url.slice(0,6) !== "mailto";
     }
 });
 

@@ -1,0 +1,19 @@
+.interests {
+
+}
+
+.interests__item {
+
+}
+
+.interests__item__keyword-list {
+    list-style: none;
+    padding: 0px;
+    padding-left: 5px;
+    margin-top: 5px;
+}
+
+.interests__item__keyword-list__item {
+    padding: inherit;
+    @include font-size($basic-text-size);
+}

@@ -24,12 +24,16 @@
     @include font-size($basic-text-size);
 }
 
-.education__item__type-area {
-    @include lato(400);
+.education__item__type-area, .education__item__specialization {
+    @include lato(300);
     @include font-size($item-title-size);
 }
 
 .education__item__gpa {
     @include lato(300);
     @include font-size($item-title-size);
+}
+
+.education__item__courses {
+    list-style: none;
 }

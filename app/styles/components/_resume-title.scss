@@ -1,0 +1,17 @@
+.resume-title {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.resume-title__name {
+    @include josefin(700);
+    @include font-size(10);
+    letter-spacing: 1px;
+}
+
+.resume-title__label {
+    @include josefin(300);
+    @include font-size(5);
+    letter-spacing: .5px;
+}

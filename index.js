@@ -50,6 +50,10 @@ handlebars.registerHelper({
 
     notEmail: function(url) {
         return url.slice(0,6) !== "mailto";
+    },
+
+    formatDegree: function(type, area) {
+        return `${type} ${area}`;
     }
 });
 

@@ -21,10 +21,17 @@
 
 .education__item__location {
     @include lato(300);
-    @include font-size($basic-text-size);
+    @include font-size($item-title-size);
+    margin-left: 15px;
 }
 
-.education__item__type-area, .education__item__specialization {
+.education__item__specialization {
+    @include lato(300);
+    @include font-size($basic-text-size);
+
+}
+
+.education__item__type-area {
     @include lato(300);
     @include font-size($item-title-size);
 }

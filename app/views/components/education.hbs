@@ -4,25 +4,15 @@
 
     {{#each resume.education}}
     <section class="education__item">
-        {{> section-header name=this.institution headerLevel=3}}
+        {{> section-header name=(formatDegree studyType area) headerLevel=3}}
 
-        {{#if location}}
-            <span class="education__item__location">{{location}}</span>
-        {{/if}}
-
+        <span class="education__item__specialization">{{specialization}}</span>
         <div>
             <span class="education__item__type-area">
-                {{#if studyType}}
-                    {{studyType}}
-                {{/if}}
-                {{#if area}}
-                    {{area}}
-                {{/if}}
+                {{this.institution}}
             </span>
-            {{#if specialization}}
-            <span class="education__item__specialization">
-                {{specialization}}
-            </span>
+            {{#if location}}
+                <span class="education__item__location">{{location}}</span>
             {{/if}}
             {{#if gpa}}
                 <span class="education__item__gpa pull-right">{{gpa}}</span>

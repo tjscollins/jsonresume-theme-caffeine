@@ -1,6 +1,6 @@
 {{#resume.basics}}
-<div class="container about-container">
-    {{> title value="About"}}
+<section class="container about-container">
+    {{> title value="Contact" level=2}}
 
     {{#if location}}
         {{#location}}
@@ -13,7 +13,7 @@
     {{/if}}
 
     {{#if phone}}
-        {{> info-tag text=this.phone icon="fa-mobile"}}
+        {{> info-tag text=this.phone icon="fa-mobile fa-2x"}}
     {{/if}}
 
     {{#if website}}

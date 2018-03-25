@@ -7,11 +7,11 @@
             {{> section-header name=this.title website=this.url}}
 
             {{#if role}}
-                <span class="project-role">{{role}}</span>
+                <span class="project__role">{{role}}</span>
             {{/if}}
 
             {{#if keywords.length}}
-            <ul class="keyword-list">
+            <ul class="project__keywords">
                 {{#each keywords}}
                     <li>{{.}}</li>
                 {{/each}}

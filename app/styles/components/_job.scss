@@ -2,10 +2,10 @@
 
 }
 
-.job__company, .job__role {
+.job__company {
     @include lato($light-weight);
     @include font-size($item-title-size);
-    text-transform: uppercase;
+    // text-transform: uppercase;
 }
 
 .job__highlights {

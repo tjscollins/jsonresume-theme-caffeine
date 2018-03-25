@@ -1,16 +1,15 @@
-.keyword-list {
+.project__keywords {
+    @include lato(300);
+    @include font-size($basic-text-size);
     list-style: none;
     display: flex;
     flex-direction: row;
-    font-size: 12px;
-    font-weight: 300;
-    font-family: $primary-font;
+    padding-left: 5px;
+    margin: 0px;
 }
 
-.project-role {
-    text-transform: uppercase;
-    font-family: $primary-color;
-    font-weight: $light-weight;
-    font-size: 12px;
+.project__role {
+    @include lato(300);
+    @include font-size($item-title-size);
     margin: 0;
 }

@@ -4,7 +4,7 @@
 
     {{#each resume.education}}
     <section class="education__item">
-        {{> section-header name=(formatDegree studyType area) headerLevel=3}}
+        {{> section-header name=(formatDegree studyType area) headerLevel=3 website=this.url}}
 
         <span class="education__item__specialization">{{specialization}}</span>
         <div>

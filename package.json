@@ -1,6 +1,6 @@
 {
   "author": "Tyler Collins",
-  "name": "jsonresume-theme-streamline",
+  "name": "@tjscollins/jsonresume-theme-streamline",
   "description": "Streamline theme for JSON Resume.  Forked from @kelyvin's jsonresume-theme-caffeine",
   "version": "0.0.1",
   "keywords": [

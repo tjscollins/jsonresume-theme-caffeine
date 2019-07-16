@@ -54,6 +54,12 @@ handlebars.registerHelper({
 
     formatDegree: function(type, area) {
         return `${type} ${area}`;
+    },
+
+    formatGradDate: function(dateString) {
+        const regex = new RegExp('^(\\D+)?([\\d\/\-]*)$')
+        const matches = regex.exec(dateString)
+        return `${matches[1] || ''}${moment(matches[2]).format('MM/YYYY')}`
     }
 });
 

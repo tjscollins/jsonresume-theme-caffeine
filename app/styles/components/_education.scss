@@ -23,7 +23,6 @@
 .education__item__location {
     @include lato(300);
     @include font-size($item-title-size);
-    margin-left: 15px;
 }
 
 .education__item__specialization {

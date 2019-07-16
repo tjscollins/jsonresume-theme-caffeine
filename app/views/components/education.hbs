@@ -4,16 +4,13 @@
 
     {{#each resume.education}}
     <section class="education__item">
-        {{> section-header name=(formatDegree studyType area) headerLevel=3 website=this.url}}
+        {{> section-header name=(formatDegree studyType area) headerLevel=3 website=this.url releaseDate=(formatGradDate releaseDate)}}
 
         <span class="education__item__specialization">{{specialization}}</span>
         <div>
             <span class="education__item__type-area">
-                {{this.institution}}
+                {{this.institution}}{{#if location}}, <span class="education__item__location">{{location}}</span>{{/if}}
             </span>
-            {{#if location}}
-                <span class="education__item__location">{{location}}</span>
-            {{/if}}
             {{#if gpa}}
                 <span class="education__item__gpa pull-right">{{gpa}}</span>
             {{/if}}

@@ -1,24 +1,27 @@
 @media print {
     // TODO: Adjust font sie by 1.25?
-    body {
-        margin: 0;
+    html, body {
+        margin: 0mm !important;
+        padding: 0mm !important;
+        background: white;
     }
 
     .page {
         width: 100%;
         height: 100%;
-        margin: 0;
-        padding: 36px 0 30px;
+        margin: 0px;
+        padding: 0px 0px 0px 0px;
         box-shadow: none;
 
         .resume-header,
         .resume-content {
-            padding: 0 22px 0 34px;
+            padding: 15px 22px 0 34px;
         }
     }
 
     .container {
         page-break-inside: avoid;
+        padding-top: spacing(2);
     }
 
     .work-container, .project-container {
